@@ -1,2 +1,88 @@
 @charset "UTF-8";
-/* 回答はここから */
+
+/* 共通レイアウト */
+.wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.q1--horizontality{
+  background-color: #a8e5f3;
+  margin: 30px auto;
+  padding: 10px;
+  width: fit-content; /* 中身に合わせる */
+  box-sizing: border-box;
+  text-align: center; /* text-alignは親に */
+}
+
+/* Q1-1: text-align */
+.inline--box {
+  display: inline-block;
+  width: 200px;
+  padding: 20px 0;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.align--box {
+  text-align: center;
+}
+
+.align--text {
+  display: inline-block;
+  padding: 10px;
+  background: #a4b3e9;
+}
+
+/* Q1-1: margin */
+.margin--text {
+  text-align: center;
+  margin: 0 auto;
+  width: 90px;
+  padding: 10px;
+  background: #a4b3e9;
+}
+
+/* Q1-2: table */
+.d--table {
+  display: table;
+}
+
+.d--cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table--text {
+  padding: 10px;
+  background-color: #fff;
+  display: inline-block;
+}
+
+/* Q1-2: flex */
+.d--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--text {
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* Q1-2: position */
+.p--relative {
+  position: relative;
+}
+
+.p--absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background: #a4b3e9;
+}
